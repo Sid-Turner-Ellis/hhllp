@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_header_components_nav_dropdowns",
+  "info": {
+    "name": "nav_dropdown",
+    "icon": "arrow-alt-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

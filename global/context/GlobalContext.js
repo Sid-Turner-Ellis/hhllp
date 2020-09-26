@@ -1,4 +1,4 @@
-import { useReducer } from 'react';
+import { useReducer, useContext } from 'react';
 import initialState from './intialState';
 import reducer from './reducer';
 import GlobalStyle from '../GlobalStyle';
@@ -6,6 +6,10 @@ import theme from '../theme';
 import { ThemeProvider } from 'styled-components';
 
 export const GlobalContext = React.createContext();
+
+export function getContext() {
+  return useContext(GlobalContext);
+}
 
 export function GlobalContextWrapper({ children }) {
   const [globalState, dispatch] = useReducer(reducer, initialState);

@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "name": "header"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Logo": {
+      "type": "string"
+    },
+    "nav_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header-components.nav-item"
+    },
+    "contact_btn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header-components.contact-btn"
+    }
+  }
+}

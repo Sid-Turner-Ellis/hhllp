@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_header_components_nav_items",
+  "info": {
+    "name": "nav_item",
+    "icon": "arrow-alt-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "nav_item": {
+      "type": "string"
+    },
+    "nav_dropdown": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header-components.nav-dropdown"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_header_logo_logos",
+  "info": {
+    "name": "Logo",
+    "icon": "icons"
+  },
+  "options": {},
+  "attributes": {
+    "Image_or_text": {
+      "type": "enumeration",
+      "enum": [
+        "image",
+        "text"
+      ]
+    },
+    "Logo_context": {
+      "type": "richtext"
+    }
+  }
+}

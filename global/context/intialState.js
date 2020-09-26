@@ -1,5 +1,5 @@
 const initialState = {
-  count: 1,
+  header: undefined,
 };
 
 export default initialState;

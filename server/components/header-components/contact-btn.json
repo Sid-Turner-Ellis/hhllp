@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_header_components_contact_btns",
+  "info": {
+    "name": "contact_btn",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "contact_us_text": {
+      "type": "string"
+    },
+    "border": {
+      "type": "boolean"
+    },
+    "border_color": {
+      "type": "string"
+    }
+  }
+}

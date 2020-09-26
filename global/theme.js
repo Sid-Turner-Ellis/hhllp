@@ -1,5 +1,9 @@
 const theme = {
-  main: 'red',
+  borderRadius: '3px',
+  colors: {
+    headerHover: '#ADADAD',
+  },
+  colorTransitionTime: '.3s',
   breakpoints: {
     xs: '@media screen and (max-width: 340px)',
     sm: '@media screen and (min-width: 500px)',
