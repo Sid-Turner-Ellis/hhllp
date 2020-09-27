@@ -4,8 +4,9 @@ import App from 'next/app';
 import fetch from 'node-fetch';
 
 function MyApp({ Component, pageProps, appProps, headerData }) {
+  console.log('pageprops in myapp', pageProps);
   return (
-    <GlobalContextWrapper value={'cunt'}>
+    <GlobalContextWrapper>
       <Header headerData={headerData} />
       <Component {...pageProps} />
     </GlobalContextWrapper>

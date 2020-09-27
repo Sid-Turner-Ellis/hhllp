@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { GlobalContext } from 'context';
 
-export default function MainBlock() {
+export default function MainBlock(props) {
   const { globalState, dispatch } = useContext(GlobalContext);
-  const landingData = globalState.landing_page_main_block;
+  console.log('mainblock', props);
   return (
     <Wrapper data={globalState.landing}>
       <p>oi</p>
