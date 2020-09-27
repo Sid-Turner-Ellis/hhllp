@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "god": "tmux new-session ;     send-keys 'next dev' C-m ;     split-window -h -p 50 ;     send-keys 'cd server && strapi develop' C-m ;"
   },
   "dependencies": {
     "babel": "^6.23.0",
@@ -17,6 +18,7 @@
     "node-fetch": "^2.6.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "tmux": "^1.0.0"
   }
 }

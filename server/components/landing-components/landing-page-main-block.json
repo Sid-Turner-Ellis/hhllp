@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_landing_components_landing_page_main_blocks",
+  "info": {
+    "name": "landing_page_main_block",
+    "icon": "assistive-listening-systems"
+  },
+  "options": {},
+  "attributes": {
+    "main_block_text": {
+      "type": "richtext"
+    },
+    "landing_main_image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-components.landing-main-image"
+    }
+  }
+}

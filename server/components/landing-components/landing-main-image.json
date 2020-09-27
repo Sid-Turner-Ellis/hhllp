@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_landing_components_landing_main_images",
+  "info": {
+    "name": "landing_main_image",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "main_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "fallback_hex_color": {
+      "type": "string"
+    }
+  }
+}

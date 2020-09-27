@@ -3,11 +3,9 @@ import Header from 'components/header/Header';
 import App from 'next/app';
 import fetch from 'node-fetch';
 
-function MyApp({ Component, pageProps, headerData, appProps }) {
-  console.log(headerData);
-
+function MyApp({ Component, pageProps, appProps, headerData }) {
   return (
-    <GlobalContextWrapper>
+    <GlobalContextWrapper value={'cunt'}>
       <Header headerData={headerData} />
       <Component {...pageProps} />
     </GlobalContextWrapper>

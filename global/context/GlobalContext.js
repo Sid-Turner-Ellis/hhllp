@@ -11,12 +11,12 @@ export function getContext() {
   return useContext(GlobalContext);
 }
 
-export function GlobalContextWrapper({ children }) {
+export function GlobalContextWrapper(props) {
   const [globalState, dispatch] = useReducer(reducer, initialState);
   return (
     <GlobalContext.Provider value={{ globalState, dispatch }}>
       <GlobalStyle />
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
     </GlobalContext.Provider>
   );
 }

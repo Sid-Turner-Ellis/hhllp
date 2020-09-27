@@ -6,7 +6,7 @@ const SubMenu = ({ data_sub_menu }) => {
   return (
     <SubMenuUL>
       {data_sub_menu.map((v, i) => (
-        <SubMenuLI>
+        <SubMenuLI key={i}>
           <Link href="/">
             <A>{v.label}</A>
           </Link>
