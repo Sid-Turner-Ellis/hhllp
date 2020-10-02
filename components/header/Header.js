@@ -4,8 +4,9 @@ import { GlobalContext } from 'context';
 import ContactBtn from './ContactBtn';
 import HeaderLogo from './HeaderLogo';
 import Menu from './Menu';
+import headerData from '../../headerData.json';
 
-export default function Header({ headerData }) {
+export default function Header() {
   const { globalState, dispatch } = useContext(GlobalContext);
   return (
     <Wrapper>
