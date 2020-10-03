@@ -8,10 +8,7 @@
   "attributes": {
     "Image_or_text": {
       "type": "enumeration",
-      "enum": [
-        "image",
-        "text"
-      ]
+      "enum": ["image", "text"]
     },
     "Logo_context": {
       "type": "richtext"

@@ -6,13 +6,16 @@
   },
   "options": {},
   "attributes": {
-    "main_block_text": {
-      "type": "richtext"
-    },
     "landing_main_image": {
       "type": "component",
       "repeatable": false,
       "component": "landing-components.landing-main-image"
+    },
+    "landing_heading": {
+      "type": "string"
+    },
+    "landing_text": {
+      "type": "richtext"
     }
   }
 }
