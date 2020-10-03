@@ -14,7 +14,9 @@ export function getContext() {
 export function GlobalContextWrapper(props) {
   const [globalState, dispatch] = useReducer(reducer, initialState);
   return (
-    <GlobalContext.Provider value={{ globalState, dispatch }}>
+    <GlobalContext.Provider
+      value={{ globalState, dispatch, pageData: props.pageData }}
+    >
       <GlobalStyle />
       <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
     </GlobalContext.Provider>

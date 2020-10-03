@@ -3,17 +3,17 @@ import { GlobalContext } from 'context';
 import { useContext, useEffect, useState } from 'react';
 import LandingPage from 'components/landing/LandingPage';
 import fs from 'fs';
+import Link from 'next/link';
 
 export default function Home(props) {
   const { globalState, dispatch } = useContext(GlobalContext);
 
-  useEffect(() => {
-    dispatch({ type: 'header', data: props.res });
-    dispatch({ type: 'landing', data: props.res });
-  }, []);
   return (
     <div>
       <LandingPage data={props.data} />
+      <Link href="/test">
+        <a>test</a>
+      </Link>
     </div>
   );
 }
