@@ -17,7 +17,7 @@ export default function test() {
 export async function getStaticProps() {
   return {
     props: {
-      data: 'fuck you test cunt',
+      data: 'fuck you test ',
     },
   };
 }
