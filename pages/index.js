@@ -6,14 +6,11 @@ import fs from 'fs';
 
 export default function Home(props) {
   const { globalState, dispatch } = useContext(GlobalContext);
-  const [dataLoaded, setDataLoaded] = useState(false);
-  console.log('index props', props);
 
   useEffect(() => {
-    console.log('ineff', props);
     dispatch({ type: 'header', data: props.res });
     dispatch({ type: 'landing', data: props.res });
-  }, [dataLoaded]);
+  }, []);
   return (
     <div>
       <LandingPage data={props.data} />
