@@ -5,6 +5,10 @@ export default function HeaderLogo({ data }) {
 }
 
 const H1 = styled.h1`
-  font-size: 2.5rem;
   font-weight: 600;
+  font-size: calc(1rem + 1.6vw);
+
+  ${props=> props.theme.breakpoints.lg}{
+    font-size: 2.5rem;
+  }
 `;

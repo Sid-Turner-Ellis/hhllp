@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_landing_components_summary_blocks",
+  "info": {
+    "name": "summary_block",
+    "icon": "arrow-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "summary_sub_block": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing-components.summary-sub-block"
+    }
+  }
+}

@@ -24,6 +24,8 @@ export async function getStaticProps(ctx) {
   // This will write the latest data to the json file
   const filePath = process.cwd() + '\\headerData.json';
   fs.writeFileSync(filePath, JSON.stringify(hres));
+  console.log('heyboi',lres);
+
   lres = parseLanding(lres);
   return {
     props: {

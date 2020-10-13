@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_landing_components_two_blocks",
+  "info": {
+    "name": "two_block",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "sub_two_block": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing-components.sub-two-block"
+    }
+  }
+}

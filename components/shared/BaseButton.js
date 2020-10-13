@@ -7,6 +7,9 @@ const BaseButton = styled.div`
   padding: 7px 20px;
   font-size: 1rem;
   font-weight: 400;
+  font-weight: 700;
+
+  user-select: none;
   &:hover {
     cursor: pointer;
   }

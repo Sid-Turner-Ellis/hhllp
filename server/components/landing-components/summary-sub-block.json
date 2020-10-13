@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_landing_components_summary_sub_blocks",
+  "info": {
+    "name": "summary_sub_block",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "desc": {
+      "type": "string"
+    },
+    "lottie": {
+      "type": "json"
+    }
+  }
+}

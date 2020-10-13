@@ -24,10 +24,11 @@ const A = styled.a`
 
 const SubMenuUL = styled.ul`
   position: absolute;
-  background-color: rgba(186, 186, 186, 0.32);
+  background-color: #f2f2f2;
   min-width: 100%;
   top: 100%;
   border-radius: ${(props) => props.theme.borderRadius};
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
 `;
 
 const SubMenuLI = styled(BaseLI)`
@@ -35,8 +36,9 @@ const SubMenuLI = styled(BaseLI)`
   padding: 10px;
   padding-right: 50px;
   border-radius: ${(props) => props.theme.borderRadius};
+  transition: background-color 0.15s;
 
   &:hover {
-    background-color: #bababa;
+    background-color: rgba(36, 36, 36, 0.3);
   }
 `;

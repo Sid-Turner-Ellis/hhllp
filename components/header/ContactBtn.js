@@ -7,6 +7,8 @@ export default function ContactBtn({ data }) {
 }
 
 const ContactButton = styled(BaseButton)`
+  display:none;
+
   border: ${({ data }) => (data.border ? '1px solid' : 'none')};
   border-color: ${(props) => props.data.border_color};
   font-size: 1.4em;
@@ -18,5 +20,9 @@ const ContactButton = styled(BaseButton)`
 
   &:hover {
     color: ${(props) => props.theme.colors.headerHover};
+  }
+
+  ${props=> props.theme.breakpoints.lg}{
+    display:block;
   }
 `;

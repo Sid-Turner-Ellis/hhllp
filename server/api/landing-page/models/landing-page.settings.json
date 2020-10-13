@@ -13,6 +13,16 @@
       "type": "component",
       "repeatable": false,
       "component": "landing-components.landing-page-main-block"
+    },
+    "sum_block": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-components.summary-block"
+    },
+    "two_block": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-components.two-block"
     }
   }
 }

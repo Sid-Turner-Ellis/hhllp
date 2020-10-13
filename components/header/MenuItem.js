@@ -30,7 +30,7 @@ const MenuItemLI = styled(BaseLI)`
     opacity: 0;
     height: 0px;
     overflow: hidden;
-    transition: opacity 0.5s;
+    transition: opacity 0.3s;
   }
   &:hover {
     cursor: pointer;

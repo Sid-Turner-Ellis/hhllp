@@ -18,5 +18,9 @@ export default function Menu({ data }) {
 
 const MenuItemUL = styled.div`
   padding: 0px 10px;
-  display: flex;
+  display: none;
+
+  ${props=> props.theme.breakpoints.lg}{
+    display:flex;
+  }
 `;

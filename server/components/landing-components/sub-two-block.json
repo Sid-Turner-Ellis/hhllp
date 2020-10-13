@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_landing_components_sub_two_blocks",
+  "info": {
+    "name": "Sub_two_block",
+    "icon": "arrow-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "background_color_hex": {
+      "type": "string"
+    }
+  }
+}
