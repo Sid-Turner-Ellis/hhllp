@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { GlobalContext } from 'context';
 import parseLanding from '../../functions/parsing/parseLanding';
+import parseURL from '../../functions/parsing/parseURL';
+
 import Link from 'next/link';
 import PrimaryBtn from 'components/shared/PrimaryBtn.js';
 
@@ -15,8 +17,9 @@ export default function MainBlock(props) {
     },
   } = pageData;
 
+
   return (
-    <Wrapper color={color}>
+    <Wrapper color={color} image={parseURL(image[0].url)} style={{backgroundImage:`url(/${parseURL(image[0].url)})`}}>
       <H1>{h1}</H1>
       <P>{p}</P>
       <CTA>
@@ -29,12 +32,12 @@ export default function MainBlock(props) {
 }
 
 const Wrapper = styled.div`
-  /* background-image: url(${(props) => props.imageurl}); */
+  /* background-image: url(/${(props) => props.image}); */
   background-color: ${(props) => props.color};
   background-position:center;
   background-size:cover;
   position:relative;
-  z-index:1;
+  /* z-index:1; */
   padding: 30px 20px;
   text-align:center;
 
@@ -44,22 +47,6 @@ const Wrapper = styled.div`
 
 
 
-  &::after{
-    content: '';
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    position:absolute;
-    z-index:2;
-  
-  }
-
-  & > * {
-    z-index:3;
-    position:relative;
-
-  }
 
   ${props=> props.theme.breakpoints.sm}{
     padding:80px 50px;

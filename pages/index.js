@@ -4,6 +4,8 @@ import { useContext, useEffect, useState } from 'react';
 import LandingPage from 'components/landing/LandingPage';
 import parseLanding from '../components/functions/parsing/parseLanding';
 import fs from 'fs';
+import {getStrapiURLs,deleteFile,saveFile} from '../components/functions/services/nodeServices'
+import { dirname } from 'path';
 
 export default function Home(props) {
   const { globalState, dispatch } = useContext(GlobalContext);
@@ -24,7 +26,22 @@ export async function getStaticProps(ctx) {
   // This will write the latest data to the json file
   const filePath = process.cwd() + '\\headerData.json';
   fs.writeFileSync(filePath, JSON.stringify(hres));
-  console.log('heyboi',lres);
+
+  // function deleting and saving images
+  const strapiIDs = await getStrapiURLs()
+  const fileIDs = fs.readdirSync(`${process.cwd()}/public`)
+
+  const commands = {
+    save: strapiIDs.filter(v => !fileIDs.includes(v)),
+    del: fileIDs.filter(v => !strapiIDs.includes(v)),
+  }
+
+  // delete all in the directory 
+  commands.del.forEach(i => deleteFile(i))
+  
+  // save all images
+  commands.save.forEach(i => saveFile(i))
+
 
   lres = parseLanding(lres);
   return {

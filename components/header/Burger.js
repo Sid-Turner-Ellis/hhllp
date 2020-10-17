@@ -1,14 +1,14 @@
 import BaseButton from '../shared/BaseButton';
 import React, {useState, useContext} from 'react';
 import styled from 'styled-components';
+import {GlobalContext} from 'context'
 
 export default function Burger() {
-  const [modalVisible,setModalVisible] = useState(false)
-  
+  const {globalState, dispatch, pageData} = useContext(GlobalContext)
 
   return (
     <Outer onClick={()=>{
-      setModalVisible(prev => !prev)
+      dispatch({type:'revertModal'})
     }}>
       <Top/>
       <Bottom />
@@ -21,6 +21,7 @@ const Outer = styled.div`
   width: 50px;
   height:17px;
   top:5px;
+  z-index:4;
 
   &:hover{
     cursor: pointer;

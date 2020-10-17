@@ -1,5 +1,5 @@
 const initialState = {
-  property: {},
+  modalVisible: false,
 };
 
 export default initialState;

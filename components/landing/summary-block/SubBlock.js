@@ -19,7 +19,6 @@ export default function SubBlock({ sb }) {
   }, [])
 
   const { label, url, lot } = sb;
-  console.log(sb);
   return (
     <Wrapper>
       {/* <Img src={process.env.API_URL + url} /> */}

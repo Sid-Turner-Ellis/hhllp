@@ -5,7 +5,6 @@ import styled from 'styled-components'
 
 
 export default function SubTwoBlock({h2,color,text}) {
-  console.log('hello?');
   return (
     <Wrapper color={color}>
       <H3>{h2}</H3>

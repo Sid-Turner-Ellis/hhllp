@@ -5,6 +5,7 @@ import ContactBtn from './ContactBtn';
 import HeaderLogo from './HeaderLogo';
 import Menu from './Menu';
 import Burger from './Burger';
+import Modal from './Modal'
 
 import headerData from '../../headerData.json';
 
@@ -12,6 +13,7 @@ export default function Header() {
   const { globalState, dispatch } = useContext(GlobalContext);
   return (
     <Wrapper>
+      <Modal/>
       <InnerWrap>
         <HeaderLogo data={headerData.Logo} />
         <Menu data={headerData.nav_item} />
@@ -28,8 +30,8 @@ const Wrapper = styled.div`
   justify-content: space-between;
   margin: auto;
   padding: 20px 10px;
-  position: relative;
-  z-index: 400;
+  /* position: relative; */
+  z-index: 4;
   align-items: flex-start;
 
   ${props=> props.theme.breakpoints.sm}{
